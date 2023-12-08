@@ -1,9 +1,9 @@
-﻿﻿@model List<Brand>
+﻿@model List<Brand>
 <ul>
-   @* @foreach (Group group in Model)
+    @foreach (Brand group in Model)
     {
         <a asp-controller="Home" asp-action="Detail" asp-route-id="@group.Id">
             <li>@group.Name</li>
         </a>
-    }*@
+    }
 </ul>

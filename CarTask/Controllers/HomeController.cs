@@ -30,7 +30,7 @@ namespace CarTask.Controllers
 
         public IActionResult Detail(int? id)
         {
-            if (id == null) return BadRequest("Group Id Mutleq Gonderilmelidi");
+            if (id == null) return BadRequest("Brand Id Mutleq Gonderilmelidi");
 
             if (!_brands.Exists(g => g.Id == id)) return NotFound("Gonderilen Id Yanlisdir");
 

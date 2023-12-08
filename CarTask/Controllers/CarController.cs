@@ -42,7 +42,7 @@ namespace CarTask.Controllers
 
         public IActionResult Detail(int id)
         {
-            if (id == null) return BadRequest("Studnet Id Mutleq Gonderilmelidi");
+            if (id == null) return BadRequest("Car Id Mutleq Gonderilmelidi");
 
             Car car = _cars.Find(s => s.Id == id);
 
